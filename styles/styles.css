@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    font-family: Mont;
+    letter-spacing: 1px;
+}
+
+@font-face {
+    font-family: Mont;
+    src: url(/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2.5px 10px rgb(114, 114, 114);
+    
+    z-index: 2;
+}
+
+header>div {
+    flex: 1;
+}
+
+#tri {
+    margin: 10px;
+}
+
+header :nth-child(2) {
+    text-align: center;
+}
+
+header :nth-child(3) {
+    text-align: right;
+}
+
+#emptyhead {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+#emtyhead>div {
+    flex:1;
+}
+
+#empty {
+    background-color: #ee2c46;
+    position: fixed;
+    top: 0;
+    width:100%;
+    height: 100px;
+
+}
+
+#head2 {
+    background-color: #ee2c46;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+}
+
+#svgee {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.svgg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+span {
+    color: rgb(92, 221, 98);
+}
+
+a > p {
+    margin: 0;
+    white-space: nowrap;
+}
+
+p {
+    font-size: 15px;
+    margin: 10;
+}
+
+h2 {
+    color: rgb(92, 221, 98);
+}
+
+nav {
+}
+
+nav>ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: right;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+li:hover {
+    background-color:rgb(92, 221, 98);
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+}
+
+main > div {
+    margin-bottom: 25px;
+}
+
+div {
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgb(114, 114, 114);
+}
+
+h3 {
+    color: white;
+}
+
+#timeline {
+}
+
+.tGames {
+    border-radius: 5px;
+    background-color: #ee2c46;
+    margin: 10px;
+    text-align: center;
+}
+
+#certFlex {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.icontain {
+    flex: 1;
+    max-width: 1000px
+}
+
+.iGames {
+    border-radius: 10px;
+    background-color: #ee2c46;
+    text-align: center;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+/*.iGames2 {
+    border-radius: 10px;
+    background-color: #ee2c46;
+    text-align: center;
+    padding: 10px;
+}
+
+.iGames2 > p {
+    padding: 85px, 10px, 0;
+}*/
+
+.theGames {
+    height: 200px;
+}
+
+.gameImages {
+    max-width: 200px;
+    height: 275px;
+    object-fit: cover;
+    border: white, solid, 2px;
+    border-radius: 5px;
+}
+
+.iGames > p {
+    padding-top: 85px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer {
+    background-color: white;
+    color: black;
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 810px) {
+    body {
+        
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+        padding: o, 20px, 0, 20px;
+    }
+
+    .container > div {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 810px) {
+    body {
+        
+    }
+
+    header {
+        flex-direction: row;
+    }
+
+    li {
+        margin: 0;
+    }
+
+    header > div {
+        flex-grow: 1;
+        min-width: 200px;
+    }
+
+    .container > div {
+        width: 70%;
+    }
+}
