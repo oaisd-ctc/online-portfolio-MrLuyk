@@ -22,7 +22,7 @@ header {
     position: sticky;
     top: 0;
     box-shadow: 0 2.5px 10px rgb(114, 114, 114);
-    
+
     z-index: 2;
 }
 
@@ -30,7 +30,7 @@ header>div {
     flex: 1;
 }
 
-#tri {
+#logo {
     margin: 10px;
 }
 
@@ -49,14 +49,14 @@ header :nth-child(3) {
 }
 
 #emtyhead>div {
-    flex:1;
+    flex: 1;
 }
 
 #empty {
     background-color: #ee2c46;
     position: fixed;
     top: 0;
-    width:100%;
+    width: 100%;
     height: 100px;
 
 }
@@ -74,7 +74,7 @@ header :nth-child(3) {
     z-index: 2;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
 }
 
 .svgg {
@@ -93,7 +93,11 @@ span {
     color: rgb(92, 221, 98);
 }
 
-a > p {
+a {
+    scroll-margin-top: 100px;
+}
+
+a>p {
     margin: 0;
     white-space: nowrap;
 }
@@ -107,8 +111,7 @@ h2 {
     color: rgb(92, 221, 98);
 }
 
-nav {
-}
+nav {}
 
 nav>ul {
     display: flex;
@@ -127,7 +130,7 @@ li {
 }
 
 li:hover {
-    background-color:rgb(92, 221, 98);
+    background-color: rgb(92, 221, 98);
 }
 
 a:link {
@@ -139,11 +142,13 @@ a:visited {
     color: white;
 }
 
-a:hover {
-}
+a:hover {}
 
-main > div {
-    margin-bottom: 25px;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 div {
@@ -154,16 +159,21 @@ div {
     background-color: white;
     display: flex;
     align-items: center;
+    padding-left: 10px;
     justify-content: center;
     flex-direction: column;
     box-shadow: 0 5px 20px rgb(114, 114, 114);
+    width: 100%;
+    margin-bottom: 25px;
+    scroll-margin-top: 100px;
+}
+
+.container>div {
+    width: 80%;
 }
 
 h3 {
     color: white;
-}
-
-#timeline {
 }
 
 .tGames {
@@ -215,7 +225,7 @@ h3 {
     border-radius: 5px;
 }
 
-.iGames > p {
+.iGames>p {
     padding-top: 85px;
     padding-left: 10px;
     padding-right: 10px;
@@ -229,45 +239,61 @@ footer {
 
 /* ------------------------------------------------------------------------------------------------- */
 
-@media only screen and (max-width: 810px) {
-    body {
-        
-    }
-
-    header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
+@media only screen and (max-width: 1545px) {
     li {
-        padding: o, 20px, 0, 20px;
-    }
-
-    .container > div {
-        width: 95%;
+        padding: 5px;
     }
 }
 
-@media only screen and (min-width: 810px) {
-    body {
-        
+@media only screen and (max-width: 1430px) {
+    li {
+        padding: 2.5px;
     }
+}
+
+@media only screen and (max-width: 1220px) {
+    body {}
 
     header {
-        flex-direction: row;
+        flex-direction: column;
+        height: 150px;
     }
+
+    #head2 {
+        height: 150px;
+    }
+
+    svg {
+        width: 100%;
+        height: 150px;
+    }
+
+    .container {
+        scroll-margin-top: 150px;
+    }
+
+    rect {}
+
+    animateMotion {}
 
     li {
-        margin: 0;
+        padding: 10px;
     }
 
-    header > div {
+    a {
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    body {}
+
+    header {}
+
+    li {
+    }
+
+    header>div {
         flex-grow: 1;
         min-width: 200px;
-    }
-
-    .container > div {
-        width: 70%;
     }
 }
